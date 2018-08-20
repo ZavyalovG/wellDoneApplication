@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14270.11" systemVersion="" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Project" representedClassName="Project" syncable="YES" codeGenerationType="class">
+        <attribute name="projectId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="setpsids" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Step" inverseName="myProjectId" inverseEntity="Step" syncable="YES"/>
+    </entity>
+    <entity name="Step" representedClassName="Step" syncable="YES" codeGenerationType="class">
+        <attribute name="endingDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endingTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="startingDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startingTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stepId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="subtitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="myProjectId" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Project" inverseName="setpsids" inverseEntity="Project" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Step" positionX="-357.203125" positionY="-15.7265625" width="128" height="195"/>
+        <element name="Project" positionX="-54" positionY="45" width="128" height="75"/>
+    </elements>
+</model>

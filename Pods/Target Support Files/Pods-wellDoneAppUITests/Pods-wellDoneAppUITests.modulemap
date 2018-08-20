@@ -1,0 +1,6 @@
+framework module Pods_wellDoneAppUITests {
+  umbrella header "Pods-wellDoneAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
